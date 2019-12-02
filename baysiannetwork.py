@@ -33,8 +33,8 @@ HeartDisease_infer = VariableElimination(model)
 
 # Computing the probability of bronc given smoke.
 print('\n1.Probability of HeartDisease given Age=28')
-q = HeartDisease_infer.query(variables=['heartdisease'], evidence={'age': 28})
-print(q['heartdisease'])
+q = HeartDisease_infer.query(variables=['heartdisease'], evidence={'age': 37})
+print(q)
 print('\n2. Probability of HeartDisease given chol (Cholestoral) =100')
-q = HeartDisease_infer.query(variables=['heartdisease'], evidence={'chol': 100})
-print(q['heartdisease'])
+q = HeartDisease_infer.query(variables=['heartdisease'], evidence={'chol': 233})
+print(q)
